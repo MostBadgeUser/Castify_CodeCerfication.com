@@ -1,0 +1,74 @@
+/* General Reset */
+body, h1, p, button, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e0e1dd; /* Light background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height to center content */
+    text-align: center;
+}
+
+.confirmation-container {
+    background-color: #1b263b; /* Dark background for the container */
+    border-radius: 15px; /* Rounded corners */
+    padding: 40px 30px; /* Padding around the content */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    max-width: 400px; /* Max width for the container */
+    width: 100%; /* Full width */
+}
+
+.confirmation-container h1 {
+    color: #e0e1dd; /* Light color for header text */
+    margin-bottom: 10px; /* Space below the header */
+    font-size: 24px; /* Font size for the header */
+}
+
+.confirmation-container p {
+    color: #778da9; /* Medium color for paragraph text */
+    margin-bottom: 20px; /* Space below paragraphs */
+    font-size: 16px; /* Font size for paragraphs */
+}
+
+#confirmationCode {
+    padding: 12px; /* Padding for input */
+    width: 100%; /* Full width for input */
+    margin-bottom: 20px; /* Space below input */
+    border: 1px solid #415a77; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #778da9; /* Input background color */
+    color: #e0e1dd; /* Text color in input */
+}
+
+#confirmBtn {
+    background-color: #415a77; /* Button background color */
+    color: #e0e1dd; /* Button text color */
+    border: none; /* Remove border */
+    padding: 12px 24px; /* Padding for button */
+    border-radius: 8px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: 600; /* Bold text */
+    font-size: 16px; /* Font size for button text */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+#confirmBtn:hover {
+    background-color: #0d1b2a; /* Darker background on hover */
+}
+
+.message {
+    margin-top: 15px; /* Space above message */
+    color: #e0e1dd; /* Text color for messages */
+}
+
+.welcome-link {
+    margin-top: 20px; /* Space above welcome link */
+    color: #e0e1dd; /* Text color for welcome link */
+}

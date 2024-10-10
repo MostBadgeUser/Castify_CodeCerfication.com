@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Email Confirmation </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castify - Email Confirmation</title>
+    <link rel="stylesheet" href="email-confirmation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="confirmation-container">
+        <h1>Email Confirmation</h1>
+        <p>Thank you for registering! A confirmation email has been sent to your email address.</p>
+        <p>Please enter the confirmation code from your email to verify your account:</p>
+        <input type="text" id="confirmationCode" placeholder="Enter confirmation code" required>
+        <button id="confirmBtn">Confirm Email</button>
+
+        <div id="message" class="message"></div>
+
+        <div class="welcome-link" style="display: none;">
+            <p>Confirmation successful! <a href="menu.html">Go to Menu Welcome</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Simulate a confirmation code for demonstration
+        const actualConfirmationCode = "123456"; // This should be generated and sent in the email
+
+        document.getElementById('confirmBtn').addEventListener('click', function() {
+            const enteredCode = document.getElementById('confirmationCode').value;
+
+            if (enteredCode === actualConfirmationCode) {
+                document.getElementById('message').innerText = 'Email confirmed successfully!';
+                document.querySelector('.welcome-link').style.display = 'block'; // Show welcome link
+            } else {
+                document.getElementById('message').innerText = 'Invalid confirmation code. Please try again.';
+            }
+        });
+    </script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
